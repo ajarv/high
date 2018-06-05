@@ -1,0 +1,47 @@
+$tip-font: Orbitron, sans-serif;
+$tip-bg: #ccffdd;
+$tip-border: #cccccc;
+// $tip-border: $tip-bg;
+$tip-color: #666;
+
+
+
+.hike-widget , .tip-widget {
+    tr {
+        td:first-child{
+            background: $tip-bg;
+            width:100px;
+            text-align: center
+        }
+        td {
+            border: $tip-border 1pt solid;
+            padding: 2px 10px
+        } 
+    }
+
+    .nuget {
+        display: inline-block;
+        width:200px;
+        height: 60px;
+        margin: 0px 5px;
+        padding: 5px;
+        font-size: 9pt;
+    }
+    .info-var {
+        font-family: $tip-font;
+    }
+    .title {
+        font-size:12pt;
+    }
+    .variant {
+        font-style: italic;
+        color: blue;
+    }
+    * {
+        margin: 0px;
+    }
+}
+
+.hike-widget , .tip-widget {
+    margin: 5px 0px
+}

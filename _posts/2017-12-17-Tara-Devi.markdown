@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Tara Devi"
+date:   2018-06-03 02:47:00
+author: Ajar Vashisth
+categories: "Himachal Pradesh"
+tags:	
+  - travel 
+  - hiking 
+  - himachal 
+  - Western Himalayas
+  - Indian Mountains
+hike:
+  title: Tara Devi
+  variant: Tara Devi Bus Stop - Tara Devi Temple - Shiv Temple - Tara Devi Bus stop
+  distance:
+    value: 4
+    units: miles
+  elevation:
+    gain:
+      value: 2000
+    units: feet
+  duration:
+    text: 3 hrs to 5 hrs
+  map:
+    waypoints:
+      - label:  Trailhead
+        link : https://goo.gl/maps/CGagYss2oYU2
+
+cover:  "/assets/taradevi/td-01.jpg"
+---
+{% include hike-vitals-widget.html  %}
+
+Tara Devi Temple is located on a beautiful mountian top near the iconic city of Shimla. According to folklore the Temple was constructed by Maharaja of Junga State after he had visions of Godess in his greams. The temple is located on an isolated mountain top which offers sweeping 360 degree views of Shimla and adjoining regions.
+
+Taradevi temple is very popular amongst Shimla locals and up until early 2000's people visited the temple on foot walking through the scenic trail through the dense Tara Devi forest. A motorable road which goes all the way to the Temple top now carries majority of the Temple visitor traffic. The trail traffic has been reduced to ` 5 %` of what it used to be.  The trail is still in a very good shape and the lower people volume is a boon in a way for preventing the environment pollution due to plastic.
+
+<a href="/high/assets/taradevi/td-02.jpg" data-lightbox="trail" data-title="1 mile from trailhead">
+  <img src="/high/assets/taradevi/td-02.jpg" title="">
+</a>
+
+

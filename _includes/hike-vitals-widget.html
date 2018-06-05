@@ -1,0 +1,52 @@
+<div class="hike-widget">
+	<table>
+		<tr>
+			<td>
+				<i class="material-icons orange600">directions_walk</i>
+			</td>
+			<td>
+				<div>
+					<span class="caption">Trail :</span>
+					<span class="info-var">
+						{{page.hike.title}}
+					</span>
+					{% if page.hike.variant%}
+					<p class="variant">[ {{page.hike.variant}} ]</p>
+					{% endif %}
+				</div>
+				<div style="width:100%">
+					{% if page.hike.distance%}
+					<div class="nuget">
+						<div class="caption">Distance</div>
+						<span class="value info-var">{{page.hike.distance.value}}</span>
+						<span class="units info-var">{{page.hike.distance.units}}</span>
+					</div>
+					{% endif %}
+					{% if page.hike.elevation%}
+					<div class="nuget">
+						<div class="caption">Elevation Gain</div>
+						<span class="value info-var">{{page.hike.elevation.gain.value}}</span>
+						<span class="units info-var">{{page.hike.elevation.units}}</span>
+					</div>
+					{% endif %}
+					{% if page.hike.duration%}
+					<div class="nuget">
+						<div class="caption">Duration</div>
+						<span class="value info-var">{{page.hike.duration.text}}</span>
+					</div>
+					{% endif %}
+					{% if page.hike.map%}
+					<div class="nuget">
+						<div class="caption">Waypoints</div>
+						{% for waypoint in page.hike.map.waypoints %}
+						<span class="info-var">
+							<a target="_blank" href="{{waypoint.link}}">{{waypoint.label}}</a>
+						</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
