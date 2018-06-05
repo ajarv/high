@@ -2,7 +2,7 @@
 	<table>
 		<tr>
 			<td>
-				<i class="material-icons orange600">directions_walk</i>
+				<i class="material-icons orange600">terrain</i>
 			</td>
 			<td>
 				<div>
@@ -18,6 +18,7 @@
 					{% if page.hike.distance%}
 					<div class="nuget">
 						<div class="caption">Distance</div>
+						<i class="material-icons">space_bar</i>
 						<span class="value info-var">{{page.hike.distance.value}}</span>
 						<span class="units info-var">{{page.hike.distance.units}}</span>
 					</div>
@@ -25,6 +26,7 @@
 					{% if page.hike.elevation%}
 					<div class="nuget">
 						<div class="caption">Elevation Gain</div>
+						<i class="material-icons">bar_chart</i>
 						<span class="value info-var">{{page.hike.elevation.gain.value}}</span>
 						<span class="units info-var">{{page.hike.elevation.units}}</span>
 					</div>
@@ -32,12 +34,14 @@
 					{% if page.hike.duration%}
 					<div class="nuget">
 						<div class="caption">Duration</div>
+						<i class="material-icons">timeline</i>
 						<span class="value info-var">{{page.hike.duration.text}}</span>
 					</div>
 					{% endif %}
 					{% if page.hike.map%}
 					<div class="nuget">
 						<div class="caption">Waypoints</div>
+						<i class="material-icons">location_on</i>
 						{% for waypoint in page.hike.map.waypoints %}
 						<span class="info-var">
 							<a target="_blank" href="{{waypoint.link}}">{{waypoint.label}}</a>
