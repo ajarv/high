@@ -22,29 +22,27 @@
 						<span class="value info-var">{{page.hike.distance.value}}</span>
 						<span class="units info-var">{{page.hike.distance.units}}</span>
 					</div>
-					{% endif %}
-					{% if page.hike.elevation%}
+					{% endif %} {% if page.hike.elevation%}
 					<div class="nuget">
 						<div class="caption">Elevation Gain</div>
 						<i class="material-icons">bar_chart</i>
 						<span class="value info-var">{{page.hike.elevation.gain.value}}</span>
 						<span class="units info-var">{{page.hike.elevation.units}}</span>
 					</div>
-					{% endif %}
-					{% if page.hike.duration%}
+					{% endif %} {% if page.hike.duration%}
 					<div class="nuget">
 						<div class="caption">Duration</div>
 						<i class="material-icons">timeline</i>
 						<span class="value info-var">{{page.hike.duration.text}}</span>
 					</div>
-					{% endif %}
+					{% endif %} 
 					{% if page.hike.map%}
 					<div class="nuget">
 						<div class="caption">Waypoints</div>
 						<i class="material-icons">location_on</i>
 						{% for waypoint in page.hike.map.waypoints %}
 						<span class="info-var">
-							<a target="_blank" href="{{waypoint.link}}">{{waypoint.label}}</a>
+							<a target="_blank" href="https://www.google.com/maps/search/?api=1&query={{waypoint.lat}},{{waypoint.lng}}">{{waypoint.label}}</a>
 						</span>
 						{% endfor %}
 					</div>
@@ -53,4 +51,35 @@
 			</td>
 		</tr>
 	</table>
+	{% if page.hike.map%}
+	<div id="hikemap_{{hike.uuid}}" class="map leaflet-container" style="height: 200px; position:relative;"></div>
+	<script>
+		function hike_map_init () {
+			// create the map object and set the cooridnates of the initial view: 
+			var waypoints = []
+			var mapDivId = 'hikemap_{{hike.uuid}}'
+			{% for waypoint in page.hike.map.waypoints %}
+			waypoints.push({label: '{{waypoint.label}}', lat: {{waypoint.lat}}, lng: {{waypoint.lng}} })
+			{% endfor %}
+
+			if (waypoints.length > 0 ){
+				var map = L.map(mapDivId).setView([waypoints[0].lat,waypoints[0].lng], 10);
+
+				// create the tile layer with correct attribution: 
+				L.tileLayer('http://{s}.tiles.mapbox.com/v3/jamesg87.goac2bf1/{z}/{x}/{y}.png', {
+					attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+					maxZoom: 18
+				}).addTo(map);
+	
+				for(var ix = 0 ; ix < waypoints.length; ix++) {
+					L.marker([waypoints[ix].lat,waypoints[ix].lng]).addTo(map)
+					.bindPopup(waypoints[ix].label)
+				}
+			}
+		}
+		if (typeof $ !== 'undefined') {
+			$(hike_map_init)
+		}
+	</script>
+	{% endif %}
 </div>

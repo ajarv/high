@@ -11,6 +11,7 @@ tags:
   - Western Himalayas
   - Indian Mountains
 hike:
+  uid: shimla_tara_devi_01
   title: Tara Devi
   variant: Tara Devi Bus Stop - Tara Devi Temple - Shiv Temple - Tara Devi Bus stop
   distance:
@@ -21,11 +22,12 @@ hike:
       value: 2000
     units: feet
   duration:
-    text: 3 hrs to 5 hrs
+    text: 2 hrs to 5 hrs
   map:
     waypoints:
       - label:  Trailhead
-        link : https://goo.gl/maps/CGagYss2oYU2
+        lat : 31.075
+        lng : 77.139 
 
 cover:  "/assets/taradevi/td-01.jpg"
 ---
@@ -33,10 +35,43 @@ cover:  "/assets/taradevi/td-01.jpg"
 
 Tara Devi Temple is located on a beautiful mountian top near the iconic city of Shimla. According to folklore the Temple was constructed by Maharaja of Junga State after he had visions of Godess in his greams. The temple is located on an isolated mountain top which offers sweeping 360 degree views of Shimla and adjoining regions.
 
-Taradevi temple is very popular amongst Shimla locals and up until early 2000's people visited the temple on foot walking through the scenic trail through the dense Tara Devi forest. A motorable road which goes all the way to the Temple top now carries majority of the Temple visitor traffic. The trail traffic has been reduced to ` 5 %` of what it used to be.  The trail is still in a very good shape and the lower people volume is a boon in a way for preventing the environment pollution due to plastic.
+Taradevi temple is very popular amongst Shimla locals and up until early 2000's people visited the temple on foot walking through the scenic trail through the dense Tara Devi forest. A motorable road which goes all the way to the Temple top now carries majority of the Temple visitor traffic. The trail traffic has been reduced to `5 %` of what it used to be.  The trail is still in a very good shape and the lower people volume is a boon in a way for preventing the environment pollution due to plastic.
 
 <a href="/high/assets/taradevi/td-02.jpg" data-lightbox="trail" data-title="1 mile from trailhead">
   <img src="/high/assets/taradevi/td-02.jpg" title="">
 </a>
+
+### Want to do this hike ?
+---
+
+Follow the below tips
+
+#### Preperation
+---
+
+* This is a moderately easy hike and anyone in good walking condition can do it.
+* Hiking / Sports shoes with Good grip recommended.  The trail can accumulate piles of leaves which are sometimes slipery to walk on.
+* Avoid this hike on a rainy day as there is only one rain shelter on the way.
+* If you do this hike on a Sunday morning, you can enjoy a free lunch / brunch at the temple.
+* Take a water bottle with you as there is no potable water on the way up to the temple.
+* Please don't litter the trail with plastic from packaged snacks.
+
+#### On the Day of Hike
+---
+* Plan to do this hike early morning. You may have to wait for 
+* Board a local bus from Shimla bus stand for Tara Devi bus stop.
+* After getting off the Bus, ask a local for the way to Tara Devi Temple.
+* Walk for around 1000 ft  [<i class="material-icons">watch</i>5min] up the trail and you will meet a fork. Take the right fork and continue.
+* If you can maintain a good pace you should reach the Temple in 45 minutes. If you are very slow you will reach the temple in less than 2 hours
+* Return via _Shiv Temple_.  From the temple retreat about 100 feet and then find a trail down to Shiv Temple. The trail is paved in concrete and well marked. 
+* You should reach the Shiv Temple in around 20 minutes
+* Take a rest for some minutes at Shiv temple. Fill your water supplies with the natural spring water.
+* The trail to the right continues back to the bus stop. It will take around 45 minutes to 1 hr 15 minutes for you to reach back at the trail head from here.
+
+
+_Happy Hiking_ 
+
+
+
 
 
