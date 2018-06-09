@@ -29,7 +29,7 @@ hike:
         lat : 31.075
         lng : 77.139 
 
-cover:  "/assets/taradevi/td-01.jpg"
+cover:  "/assets/taradevi/img/td-01.jpg"
 ---
 {% include hike-vitals-widget.html  %}
 
@@ -37,8 +37,8 @@ Tara Devi Temple is located on a beautiful mountian top near the iconic city of 
 
 Taradevi temple is very popular amongst Shimla locals and up until early 2000's people visited the temple on foot walking through the scenic trail through the dense Tara Devi forest. A motorable road which goes all the way to the Temple top now carries majority of the Temple visitor traffic. The trail traffic has been reduced to `5 %` of what it used to be.  The trail is still in a very good shape and the lower people volume is a boon in a way for preventing the environment pollution due to plastic.
 
-<a href="/high/assets/taradevi/td-02.jpg" data-lightbox="trail" data-title="1 mile from trailhead">
-  <img src="/high/assets/taradevi/td-02.jpg" title="">
+<a href="{{ site.baseurl }}/assets/taradevi/img/td-02.jpg" data-lightbox="trail" data-title="1 mile from trailhead">
+  <img src="{{ site.baseurl }}/assets/taradevi/img/td-02.jpg" title="">
 </a>
 
 ### Want to do this hike ?
@@ -80,15 +80,15 @@ Taradevi temple is very popular amongst Shimla locals and up until early 2000's 
 * Walk for around 1000 ft  [<i class="material-icons">watch</i>5min] up the trail and you will meet a fork. Take the right fork and continue.
 * If you can maintain a good pace you should reach the Temple in 45 minutes. If you are very slow you will reach the temple in less than 2 hours
 
-<a href="/high/assets/taradevi/td-mid-0.jpg" data-lightbox="trail" data-title="About 2 km ie. Mile and a haf from the trail head">
-  <img src="/high/assets/taradevi/td-mid-0.jpg" title="">
+<a href="{{ site.baseurl }}/assets/taradevi/img/td-mid-0.jpg" data-lightbox="trail" data-title="About 2 km ie. Mile and a haf from the trail head">
+  <img src="{{ site.baseurl }}/assets/taradevi/img/td-mid-0.jpg" title="">
 </a>
 
 `20 min`**Return via Shiv Temple**
 * From the temple retreat about 100 feet and then find a trail down to Shiv Temple. The trail is paved in concrete and well marked. 
 * You should reach the Shiv Temple in around 20 minutes
-<a href="/high/assets/taradevi/td-shiv.jpg" data-lightbox="trail" data-title="Shiv Temple">
-  <img src="/high/assets/taradevi/td-shiv.jpg" title="">
+<a href="{{ site.baseurl }}/assets/taradevi/img/td-shiv.jpg" data-lightbox="trail" data-title="Shiv Temple">
+  <img src="{{ site.baseurl }}/assets/taradevi/img/td-shiv.jpg" title="">
 </a>
 
 `1 hr`**Onward from Shiv Temple**
@@ -96,16 +96,16 @@ Taradevi temple is very popular amongst Shimla locals and up until early 2000's 
 * The trail to the right continues back to meet the earlier trail we took up to the temple.
 * Continue down to the the bus stop. It will take around 45 minutes to 1 hr 15 minutes for you to reach back at the trail head from here.
 
-<a href="/high/assets/taradevi/td-mid-1.jpg" data-lightbox="trail" data-title="Trial from Shiv Temple meets the upward trail here">
-  <img src="/high/assets/taradevi/td-mid-1.jpg" title="">
+<a href="{{ site.baseurl }}/assets/taradevi/img/td-mid-1.jpg" data-lightbox="trail" data-title="Trial from Shiv Temple meets the upward trail here">
+  <img src="{{ site.baseurl }}/assets/taradevi/img/td-mid-1.jpg" title="">
 </a>
 
 `30 min`**Back to Shimla**
 * Take the bus back to Shimla.
 * If you are in fun mood and lucky , you might even board the train from Tara Devi back to Shimla.__Check Train Timings for this__
 
-<a href="/high/assets/taradevi/td-bus.jpg" data-lightbox="trail" data-title="Nearby Taradevi bus stop">
-  <img src="/high/assets/taradevi/td-bus.jpg" title="">
+<a href="{{ site.baseurl }}/assets/taradevi/img/td-bus.jpg" data-lightbox="trail" data-title="Nearby Taradevi bus stop">
+  <img src="{{ site.baseurl }}/assets/taradevi/img/td-bus.jpg" title="">
 </a>
 _Happy Hiking_ 
 
