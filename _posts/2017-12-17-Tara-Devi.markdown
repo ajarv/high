@@ -10,8 +10,9 @@ tags:
   - himachal 
   - Western Himalayas
   - Indian Mountains
-hike:
-  uid: shimla_tara_devi_01
+excerpt: Taradevi trail a jewel in the natural beauty of Shimla and adjoining areas
+hike_info:
+  id: shimla_tara_devi_01
   title: Tara Devi
   variant: Tara Devi Bus Stop - Tara Devi Temple - Shiv Temple - Tara Devi Bus stop
   distance:
@@ -28,8 +29,9 @@ hike:
       - label:  Trailhead
         lat : 31.075
         lng : 77.139 
-
 cover:  "/assets/taradevi/img/td-01.jpg"
+custom_js: 
+  - hike_view
 ---
 {% include hike-vitals-widget.html  %}
 

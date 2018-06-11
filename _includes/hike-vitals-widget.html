@@ -1,5 +1,5 @@
 <div class="hike-widget">
-	<table>
+	<table class="info_table">
 		<tr>
 			<td>
 				<i class="material-icons orange600">terrain</i>
@@ -8,39 +8,38 @@
 				<div>
 					<span class="caption">Trail :</span>
 					<span class="info-var">
-						{{page.hike.title}}
+						{{page.hike_info.title}}
 					</span>
-					{% if page.hike.variant%}
-					<p class="variant">[ {{page.hike.variant}} ]</p>
+					{% if page.hike_info.variant%}
+					<p class="variant">[ {{page.hike_info.variant}} ]</p>
 					{% endif %}
 				</div>
 				<div style="width:100%">
-					{% if page.hike.distance%}
+					{% if page.hike_info.distance%}
 					<div class="nuget">
 						<div class="caption">Distance</div>
 						<i class="material-icons">space_bar</i>
-						<span class="value info-var">{{page.hike.distance.value}}</span>
-						<span class="units info-var">{{page.hike.distance.units}}</span>
+						<span class="value info-var">{{page.hike_info.distance.value}}</span>
+						<span class="units info-var">{{page.hike_info.distance.units}}</span>
 					</div>
-					{% endif %} {% if page.hike.elevation%}
+					{% endif %} {% if page.hike_info.elevation%}
 					<div class="nuget">
 						<div class="caption">Elevation Gain</div>
 						<i class="material-icons">bar_chart</i>
-						<span class="value info-var">{{page.hike.elevation.gain.value}}</span>
-						<span class="units info-var">{{page.hike.elevation.units}}</span>
+						<span class="value info-var">{{page.hike_info.elevation.gain.value}}</span>
+						<span class="units info-var">{{page.hike_info.elevation.units}}</span>
 					</div>
-					{% endif %} {% if page.hike.duration%}
+					{% endif %} {% if page.hike_info.duration%}
 					<div class="nuget">
 						<div class="caption">Duration</div>
 						<i class="material-icons">timeline</i>
-						<span class="value info-var">{{page.hike.duration.text}}</span>
+						<span class="value info-var">{{page.hike_info.duration.text}}</span>
 					</div>
-					{% endif %} 
-					{% if page.hike.map%}
+					{% endif %} {% if page.hike_info.map%}
 					<div class="nuget">
 						<div class="caption">Waypoints</div>
 						<i class="material-icons">location_on</i>
-						{% for waypoint in page.hike.map.waypoints %}
+						{% for waypoint in page.hike_info.map.waypoints %}
 						<span class="info-var">
 							<a target="_blank" href="https://www.google.com/maps/search/?api=1&query={{waypoint.lat}},{{waypoint.lng}}">{{waypoint.label}}</a>
 						</span>
@@ -51,35 +50,21 @@
 			</td>
 		</tr>
 	</table>
-	{% if page.hike.map%}
-	<div id="hikemap_{{hike.uuid}}" class="map leaflet-container" style="height: 200px; position:relative;"></div>
+	{% if page.hike_info%}
+	<table>
+		<tr>
+			<td style="width:30%">
+				<div id="map_{{page.hike_info.id}}_zl_09" class="map hike-map leaflet-container" style="height: 200px; position:relative;"></div>
+			</td>
+			<td style="width:70%">
+				<div id="map_{{page.hike_info.id}}_zl_11" class="map hike-map leaflet-container" style="height: 200px; position:relative;"></div>
+			</td>
+		</tr>
+	</table>
+	<!-- Hike Map Begin -->
 	<script>
-		function hike_map_init () {
-			// create the map object and set the cooridnates of the initial view: 
-			var waypoints = []
-			var mapDivId = 'hikemap_{{hike.uuid}}'
-			{% for waypoint in page.hike.map.waypoints %}
-			waypoints.push({label: '{{waypoint.label}}', lat: {{waypoint.lat}}, lng: {{waypoint.lng}} })
-			{% endfor %}
-
-			if (waypoints.length > 0 ){
-				var map = L.map(mapDivId).setView([waypoints[0].lat,waypoints[0].lng], 10);
-
-				// create the tile layer with correct attribution: 
-				L.tileLayer('http://{s}.tiles.mapbox.com/v3/jamesg87.goac2bf1/{z}/{x}/{y}.png', {
-					attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-					maxZoom: 18
-				}).addTo(map);
-	
-				for(var ix = 0 ; ix < waypoints.length; ix++) {
-					L.marker([waypoints[ix].lat,waypoints[ix].lng]).addTo(map)
-					.bindPopup(waypoints[ix].label)
-				}
-			}
-		}
-		if (typeof $ !== 'undefined') {
-			$(hike_map_init)
-		}
+		var hike_info = {{ page.hike_info | jsonify }};
 	</script>
+	<!-- Hike Map Begin end -->
 	{% endif %}
 </div>
