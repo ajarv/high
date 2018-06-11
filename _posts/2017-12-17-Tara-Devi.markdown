@@ -27,8 +27,15 @@ hike_info:
   map:
     waypoints:
       - label:  Trailhead
-        lat : 31.075
-        lng : 77.139 
+        lat : 31.075646
+        lng : 77.139461
+      - label: Tara Devi Temple
+        lat: 31.054316
+        lng: 77.142353 
+      - label: Old Shiv Temple
+        lat: 31.057521
+        lng: 77.141314 
+      
 cover:  "/assets/taradevi/img/td-01.jpg"
 custom_js: 
   - hike_view

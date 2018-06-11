@@ -31,9 +31,16 @@ function hike_map_init() {
             accessToken: mapboxgl_accessToken
 		}).addTo(map11);
 
+        var markers = []
 		for (var ix = 0; ix < waypoints.length; ix++) {
-			L.marker([waypoints[ix].lat, waypoints[ix].lng]).addTo(map11).bindPopup(waypoints[ix].label)
-		}
+            var marker = L.marker([waypoints[ix].lat, waypoints[ix].lng]).addTo(map11).bindPopup(waypoints[ix].label)
+            markers.push(marker)
+        }
+        var group = new L.featureGroup(markers);
+        map11.fitBounds(group.getBounds());
+
+
+ map.fitBounds(group.getBounds());
 	}
 }
 if (typeof $ !== 'undefined' && typeof hike_info !== 'undefined') {
