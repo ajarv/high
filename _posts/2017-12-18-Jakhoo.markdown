@@ -3,7 +3,9 @@ layout: post
 title:  "Jakhoo"
 date:   2018-06-03 02:47:00
 author: Ajar Vashisth
-categories: "Himachal Pradesh"
+categories: 
+  - "Himachal Pradesh"
+  - "Shimla"
 tags:	
   - travel 
   - hiking 
