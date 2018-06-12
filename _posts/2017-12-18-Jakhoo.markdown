@@ -4,6 +4,7 @@ title:  "Jakhoo"
 date:   2018-06-03 02:47:00
 author: Ajar Vashisth
 categories: 
+  - "India"
   - "Himachal Pradesh"
   - "Shimla"
 tags:	

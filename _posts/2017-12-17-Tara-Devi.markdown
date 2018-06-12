@@ -3,7 +3,10 @@ layout: post
 title:  "Tara Devi"
 date:   2018-06-03 02:47:00
 author: Ajar Vashisth
-categories: "Himachal Pradesh"
+categories: 
+  - "India"
+  - "Himachal Pradesh"
+  - "Shimla"
 tags:	
   - travel 
   - hiking 
