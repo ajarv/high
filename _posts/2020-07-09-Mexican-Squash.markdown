@@ -1,45 +1,99 @@
 ---
 layout: post
-title:  "Mexican Squash"
-date:   2020-07-09 00:00:00
+title:  "Jakhoo"
+date:   2018-06-03 02:47:00
 author: Ajar Vashisth
 categories: 
-  - "Cooking"
+  - "India"
+  - "Himachal Pradesh"
+  - "Shimla"
 tags:	
-  - Mexican Squash
-excerpt: Mexican Squash Recepie.
+  - travel 
+  - hiking 
+  - himachal 
+  - Western Himalayas
+  - Indian Mountains
+excerpt: Jakho the top of Shimla.
+hike_info:
+  id: Jakhoo_01
+  title: Jakhoo Temple
+  variant: The Ridge - Jakhoo Temple
+  distance:
+    value: 1
+    units: mile
+  elevation:
+    gain:
+      value: 1800
+    units: feet
+  duration:
+    text: 30min - 1hr
+  map:
+    waypoints:
+      - label:  Jakhoo Temple
+        lat : 31.101297
+        lng : 77.183923
+      - label: The Ridge Shimla
+        lat: 31.104668
+        lng: 77.175261 
+      
+cover:  "/assets/jakhoo/j-01.jpg"
+custom_js: 
+  - hike_view
+---
+{% include hike-vitals-widget.html  %}
+
+Jakhoo is located at the topmost point in the heart of Shimla town.[Wikipedia](https://en.wikipedia.org/wiki/Jakhoo)
+
+Almost all tourists takeup the challenge to climb to this temple and everyone (almost) is successful. The starting point of this hike is located next to the landmark church on Ridge. 
+ 
+<a href="{{ site.baseurl }}/assets/jakhoo/j-02.jpg" data-lightbox="trail" data-title="The Climb is steep">
+  <img src="{{ site.baseurl }}/assets/jakhoo/j-02.jpg" title="">
+</a>
+
+
+### Want to do this hike ?
 ---
 
 
-The Mexican Squash recepie ( serves 3 people)
+#### Preperation
+---
+**Difficulty**
+* This is a moderately hard hike and anyone in good walking condition can do it.
 
-Ingredients:
--  1 1/2 lbs Mexican Squash (aprox 5 in number)
--  0.5 lbs Onion ( half large onion )
--  1/2 tsp salt
--  1/2 tsp Cumin powder
--  1/2 tsp turmeric powder
--  2 tsp olive/vegetable oil
--  Garlick (optional) 1 clove
--  lemon juice - half lime ( Optional )
+**Best Season**
+* This trail is open all year
+* The trail has a well paved road all the way to the top.
+* Most of this trail is above 2000 mts (9000 ft) mean sea level so it snows here and the snow stays. Avoid doing this in winters after fresh spell of snow.
 
-Equipment:
-- Stove
-- Small/medium Pan with lid
+**Which Day?**
+* All days are good.
 
+**What to take along?**
+* Nothing required. Water , food and snacks are available all the way to the top. This is a tourist trail. Go carefree!
 
-Preperation 
-- Wash, peel and dice the sqash into aprox 1/2 inch cubes (shape does't matter )
-- peel and dice onion into fine cubes , the finer the better. Chop the garlic clove alongside
-- In a small pan heat oil for about a minute. Keep the stove on medium 
-- put in sliced onion and clove. Stir till golden brown 
-- Add Mexican squash 
-- Sprinkle  cumin powder, turmeric powder and salt on top , stir a little 
-- Sprinkle little water on too aprox 2-3 tea spoons 
-- Cover the pan with the lid and let it cook on medium - low heat for about 15 minutes stirring occassionally.
-- Once its musy its done. 
-- Let it cool down a bit and add lemon juice for tangy taste.
+<a href="{{ site.baseurl }}/assets/jakhoo/j-03.jpg" data-lightbox="trail" data-title="Hocus Pocus">
+  <img src="{{ site.baseurl }}/assets/jakhoo/j-03.jpg" title="Hocus Pocus">
+</a>
 
 
+<a href="{{ site.baseurl }}/assets/jakhoo/j-03.jpg" data-lightbox="trail" data-title="Hocus Pocus">
+  <img src="{{ site.baseurl }}/assets/jakhoo/j-03.jpg" title="">
+</a>
 
-Good to eat with any bread such as roti, naan,  pita bread or even regular bread.
+
+<a href="{{ site.baseurl }}/assets/jakhoo/j-04.jpg" data-lightbox="trail" data-title="">
+  <img src="{{ site.baseurl }}/assets/jakhoo/j-04.jpg" title="">
+</a>
+
+
+<a href="{{ site.baseurl }}/assets/jakhoo/j-05.jpg" data-lightbox="trail" data-title="">
+  <img src="{{ site.baseurl }}/assets/jakhoo/j-05.jpg" title="">
+</a>
+
+
+_Happy Hiking_ 
+
+
+
+
+
